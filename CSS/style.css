@@ -821,13 +821,14 @@ transition: var(--animation);
 .portfolio-img {
     cursor: pointer;
     --grid-item: 3 3 3;
+    display: block;
     transition: box-shadow var(--animation);
 }
 
 
 .link-card {
     text-decoration: none;
-    display: inline-block;
+    display: block;
 }
 
 .link-card:hover,
@@ -905,6 +906,11 @@ transition: var(--animation);
 .project-overlay :focus {
     transform: translateY(100%);
 }
+
+.portfolio-item:hover .project-overlay{
+    transform: translateY(0);
+    }
+
 
 /* end portfolio owerlay */
 
